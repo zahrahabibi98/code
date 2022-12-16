@@ -175,3 +175,256 @@
     </div>
   </body>
 </html>
+
+
+
+css
+
+
+/*GLOBALLY*/
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333533;
+  font-size: 18px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h5 {
+  margin-bottom: 5px;
+  color: #a0a0a0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*CONAINERS*/
+
+.header,
+.container {
+  display: flex;
+  padding: 45px 0;
+  justify-content: center;
+}
+
+/*HEADER*/
+
+.header {
+  background-color: #333533;
+  height: 376px;
+  align-items: center;
+}
+
+.header .title {
+  margin: 0 50px;
+}
+
+.header .title h1 {
+  color: #ffd100;
+  font-size: 56px;
+  margin: 0;
+  line-height: 1;
+}
+
+.header .position {
+  color: #fafafa;
+  font-size: 32px;
+  margin: 40px 0;
+}
+
+.header .position i {
+  color: #ffd100;
+}
+
+.button {
+  color: #ffd100;
+  border: 1px solid #ffd100;
+  border-radius: 4px;
+  padding: 8px 24px;
+}
+
+.button:hover {
+  background-color: #ffd100;
+  color: grey;
+}
+
+.button i {
+  margin-right: 6px;
+}
+
+.lang {
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  opacity: 0.7;
+  align-self: flex-start;
+}
+
+.lang:hover {
+  opacity: 1;
+}
+
+.lang i {
+  margin-right: 4px;
+}
+
+.header img {
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0;
+}
+
+/*NAVBAR*/
+
+nav {
+  width: 250px;
+  font-size: 24px;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+nav ul li .marker {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #333533;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+nav ul li.active .marker i {
+  color: #ffd100;
+  font-size: 22px;
+}
+
+nav ul li:hover .marker {
+  background-color: #333533;
+}
+
+nav ul li:not(:last-child):after {
+  content: "";
+  display: block;
+  height: 48px;
+  border-left: 1px dashed #333533;
+  margin: 16px 0px 16px 21px;
+}
+
+/*sections*/
+
+.sections {
+  width: 700px;
+  border-left: 1px solid #333533;
+  padding-left: 50px;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact div {
+  width: 50%;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact p i {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+.contact p i:hover {
+  color: #333533;
+}
+
+.social li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.socials li span {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+}
+
+.socials li span .linkedin {
+  background-image: url("../icons/social/linkedin.png");
+}
+
+.socials li:hover span .linkedin {
+  background-image: url("../icons/social/linkedin.png");
+}
+
+.socials li span .instagram {
+  background-image: url("../icons/social/instagram.png");
+}
+
+.socials li:hover span .instagram {
+  background-image: url("../icons/social/instagram.png");
+}
+
+.socials li span .stackoverflow {
+  background-image: url("../icons/social/stackoverflow.png");
+}
+
+.socials li:hover span .stackoverflow {
+  background-image: url("../icons/social/stackoverflow.png");
+}
+
+.socials li span .github {
+  background-image: url("../icons/social/github.png");
+}
+
+.socials li:hover span .github {
+  background-image: url("../icons/social/github.png");
+}
+
+.socials li span .whatsapp {
+  background-image: url("../icons/social/whatsapp.png");
+}
+
+.socials li:hover span .whatsapp {
+  background-image: url("../icons/social/whatsapp.png");
+}
+
+.socials li span .telegram {
+  background-image: url("../icons/social/telegram.png");
+}
+
+.socials li:hover span .telegram {
+  background-image: url("../icons/social/telegram.png");
+}
